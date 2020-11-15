@@ -39,4 +39,9 @@ public abstract class Piece {
 			this.pieceBehavior = pieceBehavior;
 		}
 	}
+
+	@Override
+	public String toString(){
+		return pieceBehavior.getPieceUnicode().unicode;
+	}
 }
