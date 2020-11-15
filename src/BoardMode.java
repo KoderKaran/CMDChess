@@ -1,5 +1,9 @@
 import java.util.ArrayList;
 
 public interface BoardMode {
-    ArrayList<Piece> getInitialBoardState();
+    int getXSize();
+    int getYSize();
+    void setInitialBoardState();
+    ArrayList<Piece> getBoardState();
+    void movePiece(Piece piece, Position newPos);
 }

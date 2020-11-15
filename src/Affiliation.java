@@ -1,3 +1,3 @@
 public enum Affiliation {
-	BLACK,WHITE;
+	BLACK,WHITE,BLANK;
 }

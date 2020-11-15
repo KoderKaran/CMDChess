@@ -4,14 +4,18 @@ public class ValidMoveResultWrapper {
 	private ArrayList<Position> validMoves = new ArrayList<>();
 
 	public void addMove(int x, int y){
-		validMoves.add(new Position(x,y));
+		this.validMoves.add(new Position(x,y));
+	}
+
+	public void addMoves(ArrayList<Position> validMoves){
+		this.validMoves.addAll(validMoves);
 	}
 
 	public void addValidMoveWrapper(ValidMoveResultWrapper move){
-		validMoves.addAll(move.getValidMoves());
+		this.validMoves.addAll(move.getValidMoves());
 	}
 
 	public ArrayList<Position> getValidMoves(){
-		return validMoves;
+		return this.validMoves;
 	}
 }
